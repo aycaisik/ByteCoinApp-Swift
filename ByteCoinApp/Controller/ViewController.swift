@@ -38,6 +38,7 @@ class ViewController: UIViewController , UIPickerViewDataSource, UIPickerViewDel
          let selectedCurrency = coinManager.currencyArray[row]
          coinManager.getCoinPrice(for: selectedCurrency)
      }
-     
+        
+    }
 
-}
+
