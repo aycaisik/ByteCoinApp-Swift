@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD49B3342A6A9B94007A4BC2 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD49B3332A6A9B94007A4BC2 /* CoinManager.swift */; };
+		FD6921BB2A6C0FC20083D202 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6921BA2A6C0FC20083D202 /* CoinData.swift */; };
 		FDC410BF2A6A99DA00BB6B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC410BE2A6A99DA00BB6B7B /* AppDelegate.swift */; };
 		FDC410C12A6A99DA00BB6B7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC410C02A6A99DA00BB6B7B /* SceneDelegate.swift */; };
 		FDC410C62A6A99DA00BB6B7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC410C42A6A99DA00BB6B7B /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		FD49B3332A6A9B94007A4BC2 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		FD6921BA2A6C0FC20083D202 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		FDC410BB2A6A99DA00BB6B7B /* ByteCoinApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteCoinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC410BE2A6A99DA00BB6B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDC410C02A6A99DA00BB6B7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				FD49B3332A6A9B94007A4BC2 /* CoinManager.swift */,
+				FD6921BA2A6C0FC20083D202 /* CoinData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				FD49B3342A6A9B94007A4BC2 /* CoinManager.swift in Sources */,
 				FDC410BF2A6A99DA00BB6B7B /* AppDelegate.swift in Sources */,
+				FD6921BB2A6C0FC20083D202 /* CoinData.swift in Sources */,
 				FDD2C95D2A6A9EF600779B8F /* ViewController.swift in Sources */,
 				FDC410C12A6A99DA00BB6B7B /* SceneDelegate.swift in Sources */,
 			);

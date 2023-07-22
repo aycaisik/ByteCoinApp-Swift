@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class ViewController: UIViewController , UIPickerViewDataSource, UIPickerViewDelegate{
+class ViewController: UIViewController , UIPickerViewDataSource, UIPickerViewDelegate,CoinManagerDelegate{
    
     @IBOutlet weak var bitcoinLabel: UILabel!
     
@@ -18,9 +18,31 @@ class ViewController: UIViewController , UIPickerViewDataSource, UIPickerViewDel
         super.viewDidLoad()
         currencyPicker.dataSource = self
         currencyPicker.delegate = self
+        
+        coinManager.delegate = self
 
     }
-    let coinManager = CoinManager()
+    
+    func didUpdatePrice(price: String, currency: String) {
+            
+            //Remember that we need to get hold of the main thread to update the UI, otherwise our app will crash if we
+            //try to do this from a background thread (URLSession works in the background).
+            DispatchQueue.main.async {
+                self.bitcoinLabel.text = price
+                self.currencyLabel.text = currency
+            }
+        }
+        
+        func didFailWithError(error: Error) {
+            print(error)
+        }
+    
+    //*******************
+    
+    
+    
+    
+    var coinManager = CoinManager()
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
          return 1
@@ -38,6 +60,8 @@ class ViewController: UIViewController , UIPickerViewDataSource, UIPickerViewDel
          let selectedCurrency = coinManager.currencyArray[row]
          coinManager.getCoinPrice(for: selectedCurrency)
      }
+    
+    
         
     }
 
